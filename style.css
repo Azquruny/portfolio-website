@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size:2.5rem;
+    text-align: center;
+}
+h2{
+    font-size:1.5rem;
+    text-align: center;
+}
+a{
+    color: rgb(56, 47, 107);
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+p{
+    font-size:1.2rem;
+    text-align: justify;
+}
+.dotted-hr{
+    border:dotted 6px white;
+    border-bottom: none;
+    margin:10px auto;
+    width:200px;
+}
+
+[class*="col-"]{
+float:left;
+padding: 10px;
+}
+/*for mobile*/
+[class*="col-"]{
+
+ width:100%;   
+}
+.navbar{
+    background-color:rgb(173, 34, 143);
+    padding:1% 7%;
+    text-align: center;
+
+}
+.navbar h1{
+color:white;
+margin: 0;
+padding-top: 10px;
+
+}
+.navbar-menu{
+display:flex;
+flex-direction: column;
+text-transform: uppercase;
+}
+.navbar-menu a{
+background-color: rgb(35, 123, 182);
+border-radius: 10px;
+margin:7px 0px;
+padding:10px;
+
+}
+.navbar-menu a:hover{
+  background-color: rgb(98, 100, 76);  
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* profile design start */
+
+.profile{
+    padding:130px 10px;
+    position:relative;
+    text-align:center;
+}
+
+.profile .top-student-icon{
+    position:absolute;
+    right:60px;
+    top:20px;
+    transition: transform 2s;
+}
+
+.profile .top-student-icon:hover{
+  transform:rotate(360deg);  
+}
+
+
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+.profile-desc p{
+  color:gray;  
+margin:0 auto 20px auto;
+text-align:center;
+width:90%;
+
+}
+.profile .bottom-student-icon{
+    position:absolute;
+    left:60px;
+    bottom:10px;
+    transition: transform 2s;
+}
+
+.profile .bottom-student-icon:hover{
+  transform:rotate(360deg);  
+}
+
+.profile::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+/* profile design end */
+
+
+
+ /* about me design here start */
+
+ .about-me{
+    background-color: turquoise;
+    padding:1% auto;
+    color:black;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+.aboutme-desc{
+    background-color: turquoise;
+    
+}
+
+.aboutme-image img{
+    
+    border:5px solid turquoise;
+    border-radius:50%;
+    height:220px;
+    width:200px;
+    margin:20px;
+}
+.about-me p{
+    text-align: center;
+}
+
+.about-me::after{
+    clear:both;
+    display:table;
+    content:'';
+}
+
+/* about me design here end */
+
+
+
+ /* experience section start here */
+ .professional-experience{
+     padding:1% %;;
+     margin: 10 10pxpx;
+
+ }
+ .professional-experience .card{
+background-color: rgb(111, 65, 155);
+border-radius: 5px; 
+padding: 10px;
+transition: 0.2s;
+height:600px
+ }
+ .professional-experience .card:hover{
+     box-shadow:0 4px 8px 5px rgb(170, 18, 18) ;
+ }
+ .card-icon{
+     text-align:center;
+ }
+.card-title h2{
+    background-color: rgb(167, 38, 117);
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+.skills-container{
+padding-right: 45px;
+
+}
+.skills-container li{
+    list-style:none;
+    margin: 14px 1px;
+    
+    font-weight :bolder;
+position:relative;
+text-transform: uppercase;
+
+}
+.skills-container li::before{
+  content:'';
+  position :absolute;
+    background-color: rgb(177, 130, 238);
+    top:calc(100% + 5px);
+    width:100%;
+    height:10px;
+    border-radius: 1000px;
+}
+
+.skills-container li::after{
+    content:'';
+    position :absolute;
+      background-color: rgb(187, 51, 114);
+      top:calc(100% + 5px);
+      left:0;
+      width:0%;
+      height:10px;
+      border-radius: 1000px;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-iteration-count: 3;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+
+
+  }
+  .skills-container li.html::after{
+animation-name:html;
+  }
+@keyframes html{
+to{
+    width:90%;
+}    
+
+}
+.skills-container li.css::after{
+    animation-name:css;
+      }
+    @keyframes css{
+    to{
+        width:80%;
+    }    
+    
+    }
+
+
+
+
+    .skills-container li.c::after{
+        animation-name:c;
+          }
+        @keyframes c{
+        to{
+            width:80%;
+        }    
+        
+        }
+
+        .skills-container li.java::after{
+            animation-name:java;
+              }
+            @keyframes java{
+            to{
+                width:90%;
+            }    
+            
+            }
+
+            .skills-container li.mysql::after{
+                animation-name:mysql;
+                  }
+                @keyframes mysql{
+                to{
+                    width:90%;
+                }    
+                
+                }   
+
+                .skills-container li.php::after{
+                    animation-name:php;
+                      }
+                    @keyframes php{
+                    to{
+                        width:90%;
+                    }    
+                    
+                    }
+                    .skills-container li.matlab::after{
+                        animation-name:matlab;
+                          }
+                        @keyframes matlab{
+                        to{
+                            width:90%;
+                        }    
+                        
+                        }
+                    
+                        .skills-container li.graphic::after{
+                            animation-name:graphic;
+                              }
+                            @keyframes graphic{
+                            to{
+                                width:60%;
+                            }    
+                            
+                            }
+
+                            .skills-container li.photoshop::after{
+                                animation-name:photoshop;
+                                  }
+                                @keyframes photoshop{
+                                to{
+                                    width:60%;
+                                }    
+                                
+                                }
+
+                                .skills-container li.video-editing::after{
+                                    animation-name:video-editing;
+                                      }
+                                    @keyframes video-editing{
+                                    to{
+                                        width:50%;
+                                    }    
+                                    
+                                    }
+                                    .skills-container li.spss::after{
+                                        animation-name:spss;
+                                          }
+                                        @keyframes spss{
+                                        to{
+                                            width:70%;
+                                        }    
+                                        
+                                        }
+                                        .skills-container li.microsoft-office::after{
+                                            animation-name:microsoft-office;
+                                              }
+                                            @keyframes microsoft-office{
+                                            to{
+                               width:99%;
+                                            }    
+                  
+                      }
+                      .professional-experience::after{
+                        clear:both;
+                        display:table;
+                        content:'';
+                      }
+
+
+
+.achivement{
+    padding:1% 7%;
+    background-color: rgb(124, 74, 74);
+    
+    color:black;
+    margin: 20px 20px;
+    text-align:center;
+     
+                                          }
+
+ .achivement{
+    clear:both;
+    display:table;
+    content:'';
+ }
+ .contact{
+    padding:1% 7%;
+text-align: center;
+    background-color: rgb(74, 63, 133);
+    color:black;
+    
+    
+    margin:20px 20px;
+    height: 100px;
+    width:700px;
+     
+                                          }
+.contact input,textarea{
+    width:100%;
+    padding:10px;
+    font-size:1rem;
+    border:none;
+    text-align: center;
+    border-radius:5px;
+    resize:none;
+    ;
+   
+
+
+}
+.contact button{
+    border:none;
+    background-color: rgb(119, 113, 118);
+    border-radius:12px;
+    cursor: pointer;
+    padding:10px;
+    margin:15px;
+
+}
+ .contact{
+    clear:both;
+    display:table;
+    content:'';
+ }
+ 
+
+
+/* experience section end here */
+
+/* footer */
+
+.footer{
+background-color: rgb(173, 55, 120);
+color:rgb(216, 21, 21);
+padding:10px;
+text-align: center;
+font-size:0.8rem;
+
+}
+.footer-menu a{
+    display:block;
+    margin: 15px;
+    font-size: 1rem;
+
+}
+.footer-menu a:hover{
+    color:rgb(37, 129, 129);
+
+.footer{
+    clear:both;
+    display:table;
+    content:'';
+ }
+
+
+/* footer */
+
+
+
